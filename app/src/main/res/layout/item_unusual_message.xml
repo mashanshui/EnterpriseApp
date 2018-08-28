@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandableTextView="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <com.shenhesoft.enterpriseapp.widget.CircleImageView
+        android:id="@+id/iv_header"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_gray1"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10月31日 10:00"
+                android:textColor="@color/text_gray3"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:ellipsize="end"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:maxLines="1"-->
+        <!--android:text="司机李大华在合肥蜀山区长江大道异常停留1fenzdsa"-->
+        <!--android:textColor="@color/text_gray2"-->
+        <!--android:textSize="@dimen/text_size_14" />-->
+
+        <cn.carbs.android.expandabletextview.library.ExpandableTextView
+            android:id="@+id/etv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray2"
+            app:etv_ToShrinkHintShow="false"
+            app:etv_ToExpandHintShow="false"
+            app:etv_MaxLinesOnShrink="1"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

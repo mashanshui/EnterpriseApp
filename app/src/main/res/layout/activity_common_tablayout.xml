@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical">
+
+        <com.shenhesoft.enterpriseapp.widget.MyTableLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/orange"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/orange"
+            app:tabTextAppearance="@style/TabTextSize"
+            app:tabTextColor="@color/text_gray2">
+
+        </com.shenhesoft.enterpriseapp.widget.MyTableLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none"></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dark_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_80"
+        android:visibility="gone"></View>
+</RelativeLayout>

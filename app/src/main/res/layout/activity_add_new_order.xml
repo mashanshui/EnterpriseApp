@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:focusable="false"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!-- //虽然从界面绘制的原理上讲 层级越少绘制越快，这里不分级一个Layout下也能写完，
+              但分一下可以更好阅读、维护。而且这几个层级对性能的影响 完全可忽略  -->
+
+        <!-- ================= 项目信息 ================ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/new_order_root_tv_style"
+                android:drawableLeft="@drawable/icon_xiangmxx"
+                android:text="@string/new_order_xiangmxx" />
+
+            <!-- ===项目编号=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_xiangmbh" />
+
+                <TextView
+                    android:id="@+id/tv_project_code"
+                    style="@style/new_order_child_et_style"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===项目类型=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_xiangmlx" />
+
+                <TextView
+                    android:id="@+id/tv_project_type"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===分支机构=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_fenzjg" />
+
+                <TextView
+                    android:id="@+id/tv_project_branchGroupName"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===阶段选择=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_jiedxz" />
+
+                <TextView
+                    android:id="@+id/tv_project_stepSelectCode"
+                    style="@style/new_order_child_et_style"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===发货人=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    android:id="@+id/tv_project_sendGoods"
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_fahr" />
+
+                <TextView
+                    android:id="@+id/tv_project_sendpeople"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===收货人=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    android:id="@+id/tv_project_arriveGoods"
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_shouhr" />
+
+                <TextView
+                    android:id="@+id/tv_project_acceptpeople"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ================ 车辆信息 ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/new_order_root_tv_style"
+                android:drawableLeft="@drawable/icon_chelxx"
+                android:text="@string/new_order_chelxx" />
+
+            <!-- ===承运车辆=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_chengycl" />
+
+                <!--<EditText-->
+                <!--android:id="@+id/et_project_carno"-->
+                <!--style="@style/new_order_child_et_style"-->
+                <!--android:text="" />-->
+                <TextView
+                    android:id="@+id/tv_project_carno"
+                    style="@style/new_order_child_et_style"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===车辆类型=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_chellx" />
+
+                <TextView
+                    android:id="@+id/tv_project_cartype"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===驾驶员=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_jiasy" />
+
+                <TextView
+                    android:id="@+id/tv_project_cardriver"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================ 集装箱信息 ================= -->
+        <LinearLayout
+            android:id="@+id/new_order_jizx_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/new_order_root_tv_style"
+                android:drawableLeft="@drawable/icon_jizxxx"
+                android:text="@string/new_order_jizxxx" />
+
+            <!-- ===集装箱1=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_jizx1" />
+
+                <TextView
+                    android:id="@+id/et_project_containerNumber1"
+                    style="@style/new_order_child_et_style"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===集装箱2=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_jizx2" />
+
+                <TextView
+                    android:id="@+id/et_project_containerNumber2"
+                    style="@style/new_order_child_et_style"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================ 费用信息 ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/new_order_root_tv_style"
+                android:drawableLeft="@drawable/ic_motor_fee"
+                android:text="@string/new_order_feiyxx" />
+
+            <!-- ===运费单价=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_yunfdj" />
+
+                <!--<EditText-->
+                <!--android:id="@+id/et_project_shortBargeCost"-->
+                <!--style="@style/new_order_child_et_style"-->
+                <!--android:text="" />-->
+                <TextView
+                    android:id="@+id/tv_project_shortBargeCost"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===计费方式=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_jiffs" />
+
+                <TextView
+                    android:id="@+id/tv_project_gettype"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===运费补贴=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/new_order_yunfbt" />
+
+                <EditText
+                    android:id="@+id/et_project_subsidy"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

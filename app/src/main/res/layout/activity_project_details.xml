@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:scrollbars="none">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:background="@color/white"
+           android:orientation="vertical"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="12dp"
+                   android:background="@drawable/ic_point"
+                   android:id="@+id/imageView" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="35dp"
+                   android:text="驳回原因"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_16" />
+           </RelativeLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp"
+               android:background="@color/line_color"></View>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="驳回原因："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="驳回时间："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="驳回人："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:background="@color/white"
+           android:orientation="vertical"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="12dp"
+                   android:background="@drawable/ic_car" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="35dp"
+                   android:text="车辆信息"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_16" />
+
+           </RelativeLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp"
+               android:background="@color/line_color"></View>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="申请车辆："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="车主姓名："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="司机姓名："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="车辆品牌："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="车辆型号："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:background="@color/white"
+           android:orientation="vertical"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="12dp"
+                   android:background="@drawable/ic_fleet" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="35dp"
+                   android:text="车队信息"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_16" />
+
+           </RelativeLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp"
+               android:background="@color/line_color"></View>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="所属车队："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="变更信息："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:background="@color/white"
+           android:orientation="vertical"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="12dp"
+                   android:background="@drawable/ic_company" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="35dp"
+                   android:text="挂靠公司信息"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_16" />
+
+           </RelativeLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp"
+               android:background="@color/line_color"></View>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="挂靠公司1："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="挂靠公司1："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:background="@color/white"
+           android:orientation="vertical"
+           android:paddingBottom="5dp"
+           android:paddingTop="5dp">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="12dp"
+                   android:background="@drawable/ic_credit" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="35dp"
+                   android:text="信誉安全信息"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_16" />
+
+           </RelativeLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp"
+               android:background="@color/line_color"></View>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="历史运输："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="35dp"
+               android:layout_marginRight="35dp"
+               android:layout_marginTop="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="不良记录："
+                   android:textColor="@color/text_gray3"
+                   android:textSize="@dimen/text_size_14" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="新A12345"
+                   android:textColor="@color/text_gray1"
+                   android:textSize="@dimen/text_size_14" />
+           </LinearLayout>
+
+       </LinearLayout>
+   </LinearLayout>
+</ScrollView>

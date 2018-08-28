@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/dialog_train_wait_top_bg"
+        android:gravity="center"
+        android:text="回单详情"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_train_wait_bottom_bg"
+        android:orientation="vertical">
+
+        <!-- =========车型======== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/new_order_child_tv_style"
+                android:text="@string/train_wait_details_chex" />
+
+            <TextView
+                android:id="@+id/tv_train_wait_add_cartype"
+                style="@style/new_order_child_et_style"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="15dp"
+                android:gravity="right|center_vertical" />
+        </LinearLayout>
+
+        <!-- =========车号======== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/new_order_child_tv_style"
+                android:text="@string/train_wait_details_cheh" />
+
+            <TextView
+                android:id="@+id/tv_train_wait_carnumber"
+                style="@style/new_order_child_et_style"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="15dp"
+                android:gravity="right|center_vertical" />
+
+        </LinearLayout>
+
+        <View style="@style/new_order_child_line_style" />
+
+        <!-- =========集装箱号======== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ===集装箱1=== -->
+            <LinearLayout
+                android:id="@+id/ll_containerNumber1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/train_wait_details_jizxh" />
+
+                <TextView
+                    android:id="@+id/et_train_wait_number1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- =========发货载重======== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/train_wait_details_fahzz" />
+
+                <TextView
+                    android:id="@+id/et_train_wait_sendWeight"
+                    style="@style/new_order_child_et_style"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <!-- =========到货载重======== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到货载重:"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/et_train_wait_arriveWeight"
+                    style="@style/new_order_child_et_style"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <!-- ===集装箱2=== -->
+            <LinearLayout
+                android:id="@+id/ll_containerNumber2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/train_wait_details_jizxh" />
+
+
+                <TextView
+                    android:id="@+id/et_train_wait_number2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- =========发货载重======== -->
+            <LinearLayout
+                android:id="@+id/ll_sendWeight2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/train_wait_details_fahzz" />
+
+                <TextView
+                    android:id="@+id/et_train_wait_sendWeight2"
+                    style="@style/new_order_child_et_style"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <!-- =========到货载重======== -->
+            <LinearLayout
+                android:id="@+id/ll_unloadWeight2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到货载重:"
+                    android:textColor="#333333" />
+
+                <TextView
+                    android:id="@+id/et_train_wait_arriveWeight2"
+                    style="@style/new_order_child_et_style"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="18dp"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <View style="@style/new_order_child_line_style" />
+        </LinearLayout>
+
+        <!-- =========上传单据======== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发货运单上传:"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_train_wait_img"
+                style="@style/new_order_child_et_style"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="18dp"
+                android:gravity="right|center_vertical"
+                android:text="点击上传" />
+        </LinearLayout>
+        <!-- =========上传单据======== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到货运单上传:"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_train_call_img"
+                style="@style/new_order_child_et_style"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="18dp"
+                android:gravity="right|center_vertical"
+                android:text="点击上传" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/dialog_wait_add_tvclean"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dialog_wait_add_tvsave"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#00B4FF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

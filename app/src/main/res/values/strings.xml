@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">企业助手</string>
+    <string name="home_page">首页</string>
+    <string name="location">定位</string>
+    <string name="message">聊天</string>
+    <string name="business">业务</string>
+    <string name="dispatch_task">任务分配</string>
+    <string name="dispatch_auditing">调度审核</string>
+    <string name="confirm_arrive">到货确认</string>
+    <string name="confirm_charging">计费确认</string>
+    <string name="abnormal_waybill">异常运单</string>
+    <string name="trains">火运干线</string>
+    <string name="trucks">汽运短驳</string>
+
+    <string name="main_customer">意见反馈</string>
+    <string name="de_actionbar_system">"系统消息"</string>
+    <string name="de_actionbar_sub_defult">"聊天"</string>
+    <string name="de_actionbar_sub_group">"群组"</string>
+    <string name="de_actionbar_sub_private">"我的私人会话"</string>
+    <string name="de_actionbar_sub_discussion">"我的讨论组"</string>
+    <string name="de_actionbar_sub_system">"系统消息"</string>
+
+    <string name="check_all_car">查看全部车辆</string>
+    <string name="please_enter_name">请输入您的用户名</string>
+    <string name="please_enter_password">请输入您的密码</string>
+    <string name="login">登录</string>
+    <string name="fogort_password">忘记密码？</string>
+    <string name="forgot_password">忘记密码</string>
+    <string name="all">全部</string>
+    <string name="unread">未读</string>
+    <string name="entet_phone_number">请输入注册时使用的手机号</string>
+    <string name="enter_verification_code">请输入收到的验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="enter_new_password">请输入新密码</string>
+    <string name="enter_new_password_again">请再次输入新密码</string>
+    <string name="reset_password">重置密码</string>
+    <string name="wait_dispatch">等待调度</string>
+    <string name="dismissed">已驳回</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="confirm_action">确认核准此条信息</string>
+    <string name="ps_cannot_back">此操作无法返回</string>
+    <string name="restore">还原</string>
+    <string name="wait_bill">等待回单</string>
+    <string name="phone">电话</string>
+    <string name="reject">驳回</string>
+    <string name="approve">核准</string>
+    <string name="apply_project">申请项目：</string>
+    <string name="apply_car">申请车辆：</string>
+    <string name="car_information">车辆信息：</string>
+    <string name="below_fleet">所属车队：</string>
+    <string name="history_transport">历史运输：</string>
+    <string name="reject_reason">驳回原因：</string>
+    <string name="title_activity_fire">火运干线</string>
+
+    <string name="new_order_xiangmxx">项目信息</string>
+    <string name="new_order_xiangmbh">项目编号：</string>
+    <string name="new_order_xiangmlx">项目类型：</string>
+    <string name="new_order_fenzjg">分支机构：</string>
+    <string name="new_order_jiedxz">阶段选择：</string>
+    <string name="new_order_fahr">发货人：</string>
+    <string name="new_order_shouhr">收货人：</string>
+
+    <string name="new_order_chelxx">车辆信息</string>
+    <string name="new_order_chengycl">承运车辆：</string>
+    <string name="new_order_chellx">车辆类型：</string>
+    <string name="new_order_jiasy">驾驶员：</string>
+
+    <string name="new_order_jizxxx">集装箱信息</string>
+    <string name="new_order_jizx1">集装箱1：</string>
+    <string name="new_order_jizx2">集装箱2：</string>
+
+    <string name="new_order_feiyxx">费用信息</string>
+    <string name="new_order_yunfdj">运费单价：</string>
+    <string name="new_order_jiffs">计费方式：</string>
+    <string name="new_order_yunfbt">运费补贴：</string>
+
+    <string name="wait_shipments_chengyxx">承运信息</string>
+    <string name="wait_shipments_fahpz">发货皮重：</string>
+    <string name="wait_shipments_fahmz">发货毛重：</string>
+    <string name="wait_shipments_fahjz1">发货净重：</string>
+    <string name="wait_shipments_fahjz2">发货净重：</string>
+    <string name="wait_shipments_huayzb">化验指标：</string>
+    <string name="wait_shipments_yundsc">运单上传</string>
+    <string name="wait_shipments_fahydsc">发货运单上传：</string>
+
+
+    <string name="wait_shipments_arrive_hpz">到货皮重：</string>
+    <string name="wait_shipments_arrive_hmz">到货毛重：</string>
+    <string name="wait_shipments_arrive_hjz1">到货净重：</string>
+    <string name="wait_shipments_arrive_hjz2">到货净重：</string>
+    <string name="wait_shipments_arrive_yundsc">运单上传</string>
+    <string name="wait_shipments_arrive_hydsc">到货运单上传：</string>
+
+
+    <string name="train_wait_details_chex">车型：</string>
+    <string name="train_wait_details_cheh">车号：</string>
+    <string name="train_wait_details_jizxh">集装箱号：</string>
+    <string name="train_wait_details_fahzz">发货载重：</string>
+    <string name="train_wait_details_shangcdj">上传单据：</string>
+
+
+</resources>

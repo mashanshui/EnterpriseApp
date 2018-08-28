@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/bg_bottom"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_home"
+            android:gravity="center"
+            android:text="@string/home_page"
+            android:textColor="@drawable/text_check_bule"
+            android:textSize="@dimen/text_size_10" />
+
+        <RadioButton
+            android:id="@+id/rb_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_location"
+            android:gravity="center"
+            android:text="@string/location"
+            android:textColor="@drawable/text_check_bule"
+            android:textSize="@dimen/text_size_10" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_message"
+            android:gravity="center"
+            android:text="@string/message"
+            android:textColor="@drawable/text_check_bule"
+            android:textSize="@dimen/text_size_10" />
+
+        <RadioButton
+            android:id="@+id/rb_business"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_business"
+            android:gravity="center"
+            android:text="@string/business"
+            android:textColor="@drawable/text_check_bule"
+            android:textSize="@dimen/text_size_10" />
+
+    </RadioGroup>
+</LinearLayout>

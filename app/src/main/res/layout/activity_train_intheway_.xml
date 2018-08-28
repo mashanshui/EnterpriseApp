@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <android.widget.ExpandableListView
+        android:id="@+id/train_in_the_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:childDivider="@null"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_mylocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_et_location"
+            android:hint="填写最新位置信息"
+            android:padding="5dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/text_gray2"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_size_14" />
+
+        <ImageView
+            android:id="@+id/img_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/ico_train_location_submit" />
+    </LinearLayout>
+
+    <android.widget.ExpandableListView
+        android:id="@+id/details_ex_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:childDivider="@null"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingTop="5dp" />
+
+</LinearLayout>

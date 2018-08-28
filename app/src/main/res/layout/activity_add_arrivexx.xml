@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!-- ================= 承运信息 ================ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/new_order_root_tv_style"
+                android:drawableLeft="@drawable/icon_chengyxx"
+                android:text="@string/wait_shipments_chengyxx" />
+            <!-- ===到货毛重=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/wait_shipments_arrive_hmz" />
+
+                <EditText
+                    android:id="@+id/fayxx_et_fahmz"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+            <!-- ===到货皮重=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/wait_shipments_arrive_hpz" />
+
+                <EditText
+                    android:id="@+id/fayxx_et_fahpz"
+                    style="@style/new_order_child_et_style"
+                    android:inputType="numberDecimal"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===散堆装到货净重=== -->
+            <LinearLayout
+                android:id="@+id/ll_packing"
+                style="@style/new_order_child_layout_style"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/wait_shipments_arrive_hjz1" />
+
+                <EditText
+                    android:id="@+id/fayxx_et_fahjz"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+            <!-- ===集装箱到货净重1=== -->
+            <LinearLayout
+                android:id="@+id/ll_container1"
+                style="@style/new_order_child_layout_style">
+
+                <TextView
+                    android:id="@+id/containerNum1"
+                    style="@style/new_order_child_tv_style"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/new_order_child_tv_style"
+                    android:layout_weight="3"
+                    android:text="@string/wait_shipments_arrive_hjz1" />
+
+                <EditText
+                    android:id="@+id/fayxx_et_fahjz1"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===集装箱到货净重2=== -->
+            <LinearLayout
+                android:id="@+id/ll_container2"
+                style="@style/new_order_child_layout_style">
+
+                <TextView
+                    android:id="@+id/containerNum2"
+                    style="@style/new_order_child_tv_style"
+                    android:text="" />
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:layout_weight="3"
+                    android:text="@string/wait_shipments_arrive_hjz2" />
+
+                <EditText
+                    android:id="@+id/fayxx_et_fahjz2"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/new_order_child_line_style" />
+
+            <!-- ===化验指标=== -->
+            <LinearLayout
+                style="@style/new_order_child_layout_style"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/new_order_child_tv_style"
+                    android:text="@string/wait_shipments_huayzb" />
+
+                <EditText
+                    android:id="@+id/fayxx_et_huayzb"
+                    style="@style/new_order_child_et_style"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ================ 运单上传 ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/new_order_root_tv_style"
+                android:drawableLeft="@drawable/icon_yundsc"
+                android:text="@string/new_order_feiyxx" />
+
+            <!-- ===发货运单上传=== -->
+            <LinearLayout style="@style/new_order_child_layout_style">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="@string/wait_shipments_arrive_hydsc"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/fayxx_tv_yundsc"
+                    style="@style/new_order_child_et_style"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:text="点击上传" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
